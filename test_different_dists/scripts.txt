@@ -1,0 +1,442 @@
+
+
+# tmux ls ; tmux ls
+
+# tmux 
+
+python compute_gaps2.py 0 100 amort ; python compute_gaps2.py 1 100 opt_train ; python compute_gaps2.py 0 100 opt_valid
+
+
+python compute_gaps2.py 1 1000 amort ; python compute_gaps2.py 0 1000 opt_train ; python compute_gaps2.py 1 1000 opt_valid
+
+
+python compute_gaps2.py 0 2200 amort ; python compute_gaps2.py 1 2200 opt_train ; python compute_gaps2.py 0 2200 opt_valid
+
+
+python compute_gaps2.py 1 3280 amort ; python compute_gaps2.py 0 3280 opt_train ; python compute_gaps2.py 1 3280 opt_valid
+
+
+
+
+
+python compute_gaps2.py 0 100 amort ; python compute_gaps2.py 0 700 amort ; python compute_gaps2.py 0 1300 amort
+
+
+
+
+
+
+python compute_gaps2.py 0 100 opt_train ; python compute_gaps2.py 0 300 opt_train ; python compute_gaps2.py 0 500 opt_train ; python compute_gaps2.py 0 700 opt_train ; python compute_gaps2.py 0 1000 opt_train
+python compute_gaps2.py 1 100 opt_valid ; python compute_gaps2.py 1 300 opt_valid ; python compute_gaps2.py 1 500 opt_valid ; python compute_gaps2.py 1 700 opt_valid ; python compute_gaps2.py 1 1000 opt_valid
+
+
+python compute_gaps2.py 0 100 amort ; python compute_gaps2.py 0 300 amort ; python compute_gaps2.py 0 500 amort ; python compute_gaps2.py 0 700 amort ; python compute_gaps2.py 0 1000 amort
+
+
+
+for compute_gaps3:
+
+(python compute_gaps3.py 0 100 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 400 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 700 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1000 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1300 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1600 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2200 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2500 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2800 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 3280 amort Gaus 101 binarized_fashion3_Gaus; )
+
+fewer epochs
+(python compute_gaps3.py 0 100 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 400 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1000 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1600 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2200 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2800 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 3280 amort Gaus 101 binarized_fashion3_Gaus; )
+
+even fewer
+(python compute_gaps3.py 0 100 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 400 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1600 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2800 amort Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 3280 amort Gaus 101 binarized_fashion3_Gaus; )
+
+
+(python compute_gaps3.py 0 100 amort Flow1 100 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 400 amort Flow1 100 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 700 amort Flow1 100 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 1000 amort Flow1 100 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 1300 amort Flow1 100 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 1600 amort Flow1 100 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 2200 amort Flow1 100 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 2500 amort Flow1 100 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 2800 amort Flow1 100 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 3280 amort Flow1 100 binarized_fashion3_Flow1; )
+
+
+(python compute_gaps3.py 0 100 amort Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 400 amort Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 1600 amort Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 2800 amort Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 3280 amort Flow1 101 binarized_fashion3_Flow1; )
+
+python plot_gaps_over_epochs.py ndata_101_binarized_fashion3_Gaus
+
+python plot_gaps_over_epochs.py ndata_101_binarized_fashion3_Flow1
+
+
+
+
+
+(python compute_gaps3.py 0 50 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 300 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 550 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 800 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 1550 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 2050 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 2550 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 3050 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 3280 amort Gaus 101 binarized_fashion3_LD_Gaus; )
+
+
+
+(python compute_gaps3.py 0 50 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 300 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 1550 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 2550 amort Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 3280 amort Gaus 101 binarized_fashion3_LD_Gaus; )
+
+
+
+
+
+(python compute_gaps3.py 0 50 amort Gaus 100 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 300 amort Gaus 100 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 550 amort Gaus 100 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 800 amort Gaus 100 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 1550 amort Gaus 100 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 2050 amort Gaus 100 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 2550 amort Gaus 100 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 3050 amort Gaus 100 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 3280 amort Gaus 100 binarized_fashion3_LE_Gaus; )
+
+
+(python compute_gaps3.py 0 50 amort Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 300 amort Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 1550 amort Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 2550 amort Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 3280 amort Gaus 101 binarized_fashion3_LE_Gaus; )
+
+
+
+python plot_gaps_over_epochs.py ndata_101_binarized_fashion3_LD_Gaus
+python plot_gaps_over_epochs.py ndata_101_binarized_fashion3_LE_Gaus
+
+
+
+
+
+
+
+tmux 0
+(python compute_gaps3.py 0 100 opt_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 400 opt_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1600 opt_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2800 opt_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 3280 opt_train Gaus 101 binarized_fashion3_Gaus;)
+
+
+
+tmux 1
+(python compute_gaps3.py 0 100 opt_valid Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 400 opt_valid Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1600 opt_valid Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2800 opt_valid Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 3280 opt_valid Gaus 101 binarized_fashion3_Gaus; )
+
+
+tmux 2
+(python compute_gaps3.py 0 100 opt_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 400 opt_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 1600 opt_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 2800 opt_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 3280 opt_train Flow1 101 binarized_fashion3_Flow1;)
+
+
+
+tmux 3
+(python compute_gaps3.py 0 100 opt_valid Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 400 opt_valid Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 1600 opt_valid Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 2800 opt_valid Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 3280 opt_valid Flow1 101 binarized_fashion3_Flow1; )
+
+
+tmux 4
+(python compute_gaps3.py 1 100 opt_train Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 400 opt_train Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 1600 opt_train Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 2800 opt_train Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 3280 opt_train Gaus 101 binarized_fashion3_LD_Gaus;)
+
+tmux 5
+(python compute_gaps3.py 1 100 opt_valid Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 400 opt_valid Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 1600 opt_valid Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 2800 opt_valid Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 3280 opt_valid Gaus 101 binarized_fashion3_LD_Gaus; )
+
+tmux 6
+(python compute_gaps3.py 1 100 opt_train Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 400 opt_train Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 1600 opt_train Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 2800 opt_train Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 3280 opt_train Gaus 101 binarized_fashion3_LE_Gaus;)
+
+tmux 7
+(python compute_gaps3.py 1 100 opt_valid Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 400 opt_valid Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 1600 opt_valid Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 2800 opt_valid Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 3280 opt_valid Gaus 101 binarized_fashion3_LE_Gaus; )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tmux 2
+(python compute_gaps3.py 0 100 ais_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 400 ais_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1600 ais_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2800 ais_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 3280 ais_train Gaus 101 binarized_fashion3_Gaus;)
+
+tmux 3
+(python compute_gaps3.py 0 100 ais_test Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 400 ais_test Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1600 ais_test Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2800 ais_test Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 3280 ais_test Gaus 101 binarized_fashion3_Gaus; )
+
+
+tmux 4
+(python compute_gaps3.py 0 100 ais_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 400 ais_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 1600 ais_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 2800 ais_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 3280 ais_train Flow1 101 binarized_fashion3_Flow1;)
+
+
+tmux 5
+(python compute_gaps3.py 0 100 ais_test Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 400 ais_test Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 1600 ais_test Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 2800 ais_test Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 3280 ais_test Flow1 101 binarized_fashion3_Flow1; )
+
+
+tmux 6
+(python compute_gaps3.py 1 100 ais_train Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 400 ais_train Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 1600 ais_train Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 2800 ais_train Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 3280 ais_train Gaus 101 binarized_fashion3_LD_Gaus;)
+
+tmux 7
+(python compute_gaps3.py 1 100 ais_test Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 400 ais_test Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 1600 ais_test Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 2800 ais_test Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 3280 ais_test Gaus 101 binarized_fashion3_LD_Gaus; )
+
+tmux 10
+(python compute_gaps3.py 1 50 ais_train Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 300 ais_train Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 1550 ais_train Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 2550 ais_train Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 3280 ais_train Gaus 101 binarized_fashion3_LE_Gaus;)
+
+tmux 11
+(python compute_gaps3.py 1 100 ais_test Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 400 ais_test Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 1600 ais_test Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 2800 ais_test Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 3280 ais_test Gaus 101 binarized_fashion3_LE_Gaus; )
+
+
+
+
+(python compute_gaps3.py 0 50 amort Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 300 amort Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 1550 amort Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 2550 amort Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 0 3280 amort Gaus 101 binarized_fashion3_LE_Gaus; )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tmux 2
+(python compute_gaps3.py 0 100 ais_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 400 ais_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1600 ais_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2800 ais_train Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 3280 ais_train Gaus 101 binarized_fashion3_Gaus;)
+
+tmux 3
+(python compute_gaps3.py 0 100 ais_test Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 400 ais_test Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 1600 ais_test Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 2800 ais_test Gaus 101 binarized_fashion3_Gaus; 
+python compute_gaps3.py 0 3280 ais_test Gaus 101 binarized_fashion3_Gaus; )
+
+
+tmux 4
+(python compute_gaps3.py 0 100 ais_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 400 ais_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 1600 ais_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 2800 ais_train Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 3280 ais_train Flow1 101 binarized_fashion3_Flow1;)
+
+
+tmux 5
+(python compute_gaps3.py 0 100 ais_test Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 400 ais_test Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 1600 ais_test Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 2800 ais_test Flow1 101 binarized_fashion3_Flow1; 
+python compute_gaps3.py 0 3280 ais_test Flow1 101 binarized_fashion3_Flow1; )
+
+
+tmux 12
+(python compute_gaps3.py 1 50 ais_train Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 300 ais_train Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 1550 ais_train Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 1 2550 ais_train Gaus 101 binarized_fashion3_LD_Gaus;)
+
+tmux 13
+(python compute_gaps3.py 0 50 ais_test Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 300 ais_test Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 1550 ais_test Gaus 101 binarized_fashion3_LD_Gaus; 
+python compute_gaps3.py 0 2550 ais_test Gaus 101 binarized_fashion3_LD_Gaus; )
+
+tmux 10
+(python compute_gaps3.py 1 50 ais_train Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 300 ais_train Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 1550 ais_train Gaus 101 binarized_fashion3_LE_Gaus;
+python compute_gaps3.py 1 2550 ais_train Gaus 101 binarized_fashion3_LE_Gaus;)
+
+tmux 11
+(python compute_gaps3.py 1 50 ais_test Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 300 ais_test Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 1550 ais_test Gaus 101 binarized_fashion3_LE_Gaus; 
+python compute_gaps3.py 1 2550 ais_test Gaus 101 binarized_fashion3_LE_Gaus; )
+
+
+
+
+
+
+
+
+
+for flow
+
+### figure out which gpu to use
+
+tmux 2
+(python compute_gaps3.py 0 100 ais_train Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 400 ais_train Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 1600 ais_train Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 2800 ais_train Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 3280 ais_train Flow 101 binarized_fashion3_Flow;)
+
+tmux 3
+(python compute_gaps3.py 0 100 ais_test Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 400 ais_test Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 1600 ais_test Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 2800 ais_test Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 3280 ais_test Flow 101 binarized_fashion3_Flow; )
+
+
+tmux 0
+(python compute_gaps3.py 0 100 opt_train Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 400 opt_train Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 1600 opt_train Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 2800 opt_train Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 3280 opt_train Flow 101 binarized_fashion3_Flow;)
+
+
+
+tmux 1
+(python compute_gaps3.py 0 100 opt_valid Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 400 opt_valid Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 1600 opt_valid Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 2800 opt_valid Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 3280 opt_valid Flow 101 binarized_fashion3_Flow; )
+
+
+(python compute_gaps3.py 0 100 amort Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 400 amort Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 1600 amort Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 2800 amort Flow 101 binarized_fashion3_Flow; 
+python compute_gaps3.py 0 3280 amort Flow 101 binarized_fashion3_Flow; )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
